@@ -16,8 +16,8 @@ class Solution:
                 left.next = cur
                 left = left.next
             cur = cur.next
-            left.next = rightHead.next
-            right.next = None
+        left.next = rightHead.next
+        right.next = None
         
         return leftHead.next
                     
