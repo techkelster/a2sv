@@ -1,4 +1,3 @@
-
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -15,7 +14,7 @@ class Solution:
                 return travers(root1.left, root2.right) and travers(root1.right, root2.left)
             return not root1 and not root2
 
-        if not root:
-            return True
+        # if not root:
+        #     return True
 
         return travers(root.left, root.right)
